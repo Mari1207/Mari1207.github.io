@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Resume  Mari Morishita</title>
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -28,6 +29,46 @@
             text-align: center;
             }
             .TechnicalSkill{height: 500;}
+            .container {
+               position: relative;
+               float:right;
+               width: 200px;
+
+                      }
+            .image {
+               display: block;
+               width: auto;
+               height: auto;
+                   }
+            .overlay {
+                position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 5;
+               height: 100%;
+               width: 100%;
+               opacity: 0;
+               transition: .5s ease;
+               background-color: rgb(245, 146, 207);
+                          }
+ 
+            .container:hover .overlay {
+                                        opacity: 1;
+                                    }
+   
+                            
+            .Text{
+                     color: white;
+                     font-size: 20px;
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     -webkit-transform: translate(-50%, -50%);
+                     -ms-transform: translate(-50%, -50%);
+                     transform: translate(-50%, -50%);
+                     text-align: center;
+                    }
            
         
         </style>
@@ -46,10 +87,16 @@
              }
         </style>
         <header class="title">
-            <img src="cat-4372119_640.jpg" class="rounded-circle" alt="Mari Morishita" style="float:right;width:200px;height:200px"/> 
+    <div id="box4">
+            <div class=container>
+                <img src="cat-4372119_640.jpg" class="rounded-circle image" alt="Mari Morishita" style="width:200px;height: 200px;"/> 
+                  <div class="overlay rounded-circle">
+                   <div class="Text">Mari Morishita</div>
+                  </div> 
+            </div>
         <h1 >Resume</h1>
         <h2 >Mari Morishita</h2>
-        
+    </div>
         </header>
         <section class="About">
                 <p>I am Mari Morishita.I am form Japan, Mie.
@@ -59,8 +106,13 @@
         </section> 
                 
         <section>
+            <a href="#box1"  ><p style="text-align: center">Go to Education</p></a>
+            <a href ="#box2"><p style="text-align: center">Go to Experience</p></a>
+            <a href="#box3"><p style="text-align: center">Go to Technical Skills</p></a>
             
-            <h2 class ="Chapter">Education</h2>
+          <div id ="box1">
+
+         <h2 class ="Chapter">Education</h2>
                       
         <ul>
            <li>Yokkaichi-Minami HighSchool  2006-2009 </li>
@@ -70,11 +122,12 @@
            
         </ul>
         <p>University of Nagasaki WebPage: <a href="http://sun.ac.jp/e/" target="_blank">Click here</a></p>
-           
+    </div> 
                   
         </section>
 
         <section>
+            <div id="box2">
                 <h2 class="Chapter">Experience</h2>
             <p><u>Yutaka Pharmacy 2012-2015</u></p>
                 <ul>
@@ -90,10 +143,11 @@
                             <li>Responsible of sales and supervision of cashier
                         </li>
                     </ul>
-           
+                </div>
         </section>
 
         <section class="TechnicalSkill">
+            <div id="box3">
                 <h2 class ="Chapter">Technical Skills</h2>
                 <ul>
                     <li>Excellent customer service skills</li>
@@ -106,14 +160,15 @@
                     
 
                 </ul>
-               
+            </div>
         </section>
         <br>
         <footer>
+            <a href="#box4"><p style="text-align: center">Go to Top</p></a>
             <h5 style="background: hotpink;">Mari Morishita</h5>
-            <p>Address:378Greenfield Ave</p>
+            
             <p>PhoneNumber:614-9090-5678</p>
-            <p>E-mail:step_1017@yahoo.co.jp</p>
+            <p>E-mail:step_1017@yahooo.co.jp</p>
 
         </footer>
         
